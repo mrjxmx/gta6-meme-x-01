@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>LAUNCH WEEK IN LEONIDA — meme composition</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { width: 1200px; height: 800px; overflow: hidden; background: #1a0f14; }
+  .stage { position: relative; width: 1200px; height: 800px; }
+  .scene { position: absolute; inset: 0; width: 1200px; height: 800px; object-fit: cover; }
+  .overlay { position: absolute; inset: 0; }
+  .ghost { position: absolute; left: 389px; top: 372px; width: 444px; }
+  .cap {
+    font-family: "DejaVu Sans", "Liberation Sans", sans-serif;
+    font-weight: 700;
+    fill: #ffffff;
+    stroke: #191419;
+    stroke-linejoin: round;
+    paint-order: stroke;
+    text-anchor: middle;
+  }
+  .cap-shadow {
+    font-family: "DejaVu Sans", "Liberation Sans", sans-serif;
+    font-weight: 700;
+    fill: rgba(40, 10, 30, 0.45);
+    text-anchor: middle;
+  }
+</style>
+</head>
+<body>
+<div class="stage">
+  <img class="scene" src="base-scene.png" alt="">
+  <svg class="overlay" width="1200" height="800" viewBox="0 0 1200 800">
+    <defs>
+      <pattern id="stripes" width="54" height="12" patternUnits="userSpaceOnUse">
+        <rect width="54" height="12" fill="#ffffff"/>
+        <rect width="27" height="12" fill="#e0218a"/>
+      </pattern>
+      <linearGradient id="shade" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="#ffffff" stop-opacity="0.14"/>
+        <stop offset="0.5" stop-color="#ffffff" stop-opacity="0"/>
+        <stop offset="1" stop-color="#7a1030" stop-opacity="0.16"/>
+      </linearGradient>
+      <filter id="soft" x="-40%" y="-40%" width="180%" height="180%">
+        <feGaussianBlur stdDeviation="7"/>
+      </filter>
+    </defs>
+
+    <!-- ground shadow under the chair -->
+    <ellipse cx="611" cy="788" rx="252" ry="17" fill="#5a2d12" opacity="0.38" filter="url(#soft)"/>
+
+    <!-- the ghost's deck chair, drawn behind the ghost -->
+    <g>
+      <!-- backrest: a wide deck chair the ghost lounges in, stripes framing it -->
+      <g transform="translate(611 512) rotate(-5)">
+        <rect x="-252" y="-128" width="504" height="258" rx="16" fill="#8a5a33" stroke="#5d3a1e" stroke-width="3"/>
+        <rect x="-239" y="-115" width="478" height="232" rx="10" fill="url(#stripes)"/>
+        <rect x="-239" y="-115" width="478" height="232" rx="10" fill="url(#shade)"/>
+      </g>
+      <!-- legs and crossbar, splayed outside the ghost's silhouette -->
+      <path d="M448 748 L418 797 M774 748 L804 797" stroke="#8a5a33" stroke-width="13" stroke-linecap="round"/>
+      <path d="M428 780 H794" stroke="#8a5a33" stroke-width="9" stroke-linecap="round"/>
+      <!-- seat -->
+      <rect x="420" y="728" width="382" height="25" rx="8" fill="url(#stripes)" stroke="#5d3a1e" stroke-width="2.5" transform="rotate(-1 611 740)"/>
+      <!-- armrests at the chair's sides -->
+      <rect x="350" y="664" width="90" height="17" rx="8" fill="#8a5a33" stroke="#5d3a1e" stroke-width="2.5"/>
+      <rect x="782" y="664" width="90" height="17" rx="8" fill="#8a5a33" stroke="#5d3a1e" stroke-width="2.5"/>
+    </g>
+
+  </svg>
+  <img class="ghost" src="ghost.svg" alt="">
+  <svg class="overlay" width="1200" height="800" viewBox="0 0 1200 800">
+    <!-- captions: shadow pass, then stroked pass -->
+    <text class="cap-shadow" x="603" y="88" font-size="59" textLength="1128" lengthAdjust="spacingAndGlyphs">THE WHOLE CITY CALLED IN SICK</text>
+    <text class="cap" x="600" y="84" font-size="59" stroke-width="10" textLength="1128" lengthAdjust="spacingAndGlyphs">THE WHOLE CITY CALLED IN SICK</text>
+    <text class="cap-shadow" x="603" y="772" font-size="56" textLength="1104" lengthAdjust="spacingAndGlyphs">GTA VI LAUNCH WEEK IN LEONIDA</text>
+    <text class="cap" x="600" y="768" font-size="56" stroke-width="10" textLength="1104" lengthAdjust="spacingAndGlyphs">GTA VI LAUNCH WEEK IN LEONIDA</text>
+  </svg>
+</div>
+</body>
+</html>

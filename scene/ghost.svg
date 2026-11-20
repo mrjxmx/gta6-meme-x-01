@@ -1,0 +1,101 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 34 31" role="img" aria-label="make.fun ghost playing GTA VI in Leonida">
+  <!--
+    The make.fun ghost, built from the real press-kit mark (assets/mark.svg):
+    body path, sparkle eyes, magenta star coin and bubble are the mark's own
+    geometry and colours (#191419 outline, #c41c83 magenta). Dressed for
+    Leonida: a teal Hawaiian shirt, sunglasses pushed up on its head, and a
+    game controller in both hands.
+  -->
+  <defs>
+    <clipPath id="bodyClip">
+      <path d="M6.2 13a8.2 8.2 0 0 1 16.4 0v4.6c1 .2 1.8.8 2 2-.2 1.2-1 1.9-2 2.2V25a2.6 2.6 0 0 1-2.6 2.6c-2 0-4.6 0-5.7-.7-1.1.7-3.7.7-5.5.7A2.6 2.6 0 0 1 6.2 25v-.7c-1.2.3-3.5.1-3.6-1.9-.1-2.1 1.3-4.8 3.6-6.2z"/>
+    </clipPath>
+    <g id="flowerW">
+      <g fill="#ffffff">
+        <ellipse cx="0" cy="-0.95" rx="0.62" ry="1.05"/>
+        <ellipse cx="0.9" cy="-0.3" rx="0.62" ry="1.05" transform="rotate(72 0.9 -0.3)"/>
+        <ellipse cx="0.56" cy="0.78" rx="0.62" ry="1.05" transform="rotate(144 0.56 0.78)"/>
+        <ellipse cx="-0.56" cy="0.78" rx="0.62" ry="1.05" transform="rotate(216 -0.56 0.78)"/>
+        <ellipse cx="-0.9" cy="-0.3" rx="0.62" ry="1.05" transform="rotate(288 -0.9 -0.3)"/>
+      </g>
+      <circle r="0.42" fill="#ffd166"/>
+    </g>
+    <g id="flowerP">
+      <g fill="#ff6b9d">
+        <ellipse cx="0" cy="-0.95" rx="0.62" ry="1.05"/>
+        <ellipse cx="0.9" cy="-0.3" rx="0.62" ry="1.05" transform="rotate(72 0.9 -0.3)"/>
+        <ellipse cx="0.56" cy="0.78" rx="0.62" ry="1.05" transform="rotate(144 0.56 0.78)"/>
+        <ellipse cx="-0.56" cy="0.78" rx="0.62" ry="1.05" transform="rotate(216 -0.56 0.78)"/>
+        <ellipse cx="-0.9" cy="-0.3" rx="0.62" ry="1.05" transform="rotate(288 -0.9 -0.3)"/>
+      </g>
+      <circle r="0.42" fill="#fff3b0"/>
+    </g>
+    <path id="leaf" d="M0 0 Q1.5 -1.1 3 0 Q1.5 1.1 0 0 Z" fill="#0b7a55"/>
+  </defs>
+
+  <!-- body: the mark's own path, outline pass then white fill -->
+  <path d="M6.2 13a8.2 8.2 0 0 1 16.4 0v4.6c1 .2 1.8.8 2 2-.2 1.2-1 1.9-2 2.2V25a2.6 2.6 0 0 1-2.6 2.6c-2 0-4.6 0-5.7-.7-1.1.7-3.7.7-5.5.7A2.6 2.6 0 0 1 6.2 25v-.7c-1.2.3-3.5.1-3.6-1.9-.1-2.1 1.3-4.8 3.6-6.2z" fill="#191419" stroke="#191419" stroke-width="3.4" stroke-linejoin="round"/>
+  <path d="M6.2 13a8.2 8.2 0 0 1 16.4 0v4.6c1 .2 1.8.8 2 2-.2 1.2-1 1.9-2 2.2V25a2.6 2.6 0 0 1-2.6 2.6c-2 0-4.6 0-5.7-.7-1.1.7-3.7.7-5.5.7A2.6 2.6 0 0 1 6.2 25v-.7c-1.2.3-3.5.1-3.6-1.9-.1-2.1 1.3-4.8 3.6-6.2z" fill="#ffffff"/>
+
+  <!-- Hawaiian shirt, clipped to the body's silhouette -->
+  <g clip-path="url(#bodyClip)">
+    <rect x="0" y="16.4" width="30" height="15" fill="#0ea5a4"/>
+    <use href="#flowerW" transform="translate(7 20) scale(0.9)"/>
+    <use href="#flowerP" transform="translate(20.5 19.2) scale(0.8)"/>
+    <use href="#flowerP" transform="translate(11 24.6) scale(1)"/>
+    <use href="#flowerW" transform="translate(23 25.2) scale(0.75)"/>
+    <use href="#flowerW" transform="translate(5.2 26.2) scale(0.7)"/>
+    <use href="#leaf" transform="translate(15 21.6) rotate(28)"/>
+    <use href="#leaf" transform="translate(8.2 22.6) rotate(-24) scale(0.9)"/>
+    <use href="#leaf" transform="translate(17.8 27) rotate(12) scale(0.85)"/>
+    <use href="#leaf" transform="translate(24.6 22) rotate(48) scale(0.8)"/>
+    <!-- collar and placket -->
+    <path d="M10.6 16.4 h2.3 L14.4 18.8 L12.9 16.4 Z" fill="#ff6b81"/>
+    <path d="M18.2 16.4 h-2.3 L14.4 18.8 L15.9 16.4 Z" fill="#ff6b81"/>
+    <path d="M14.4 18.8 V26.6" stroke="#0b7c7b" stroke-width="0.5"/>
+    <circle cx="14.4" cy="20.6" r="0.42" fill="#ffd166" stroke="#0b7c7b" stroke-width="0.18"/>
+    <circle cx="14.4" cy="23.1" r="0.42" fill="#ffd166" stroke="#0b7c7b" stroke-width="0.18"/>
+    <circle cx="14.4" cy="25.6" r="0.42" fill="#ffd166" stroke="#0b7c7b" stroke-width="0.18"/>
+  </g>
+
+  <!-- the mark's hem notches -->
+  <path d="M6.3 24.1v-2.5m8 5.8v-1.5" fill="none" stroke="#191419" stroke-width="1.25" stroke-linecap="round"/>
+
+  <!-- sparkle eyes, the mark's own -->
+  <path d="M13.2 10.6Q13.632 11.968 15 12.4Q13.632 12.832 13.2 14.2Q12.768 12.832 11.4 12.4Q12.768 11.968 13.2 10.6z" fill="#191419"/>
+  <path d="M19.3 9.8Q19.732 11.168 21.1 11.6Q19.732 12.032 19.3 13.4Q18.868 12.032 17.5 11.6Q18.868 11.168 19.3 9.8z" fill="#191419"/>
+
+  <!-- sunglasses pushed up on the head, sparkles still showing -->
+  <g transform="translate(14.4 6.55) rotate(-5)">
+    <path d="M-6.6 -0.6 L-8.6 1.6 M6.6 -0.6 L8.6 1.6" stroke="#191419" stroke-width="0.6" stroke-linecap="round"/>
+    <rect x="-6.6" y="-1.55" width="5.9" height="3.1" rx="1.5" fill="#232830" stroke="#191419" stroke-width="0.55"/>
+    <rect x="0.7" y="-1.55" width="5.9" height="3.1" rx="1.5" fill="#232830" stroke="#191419" stroke-width="0.55"/>
+    <path d="M-0.7 -0.5 Q0 -1.3 0.7 -0.5" fill="none" stroke="#191419" stroke-width="0.55"/>
+    <path d="M-5.3 -0.95 L-3.5 -0.95 L-4.7 0.95 L-5.7 0.95 Z" fill="#ffffff" opacity="0.28"/>
+    <path d="M2 -0.95 L3.8 -0.95 L2.6 0.95 L1.6 0.95 Z" fill="#ffffff" opacity="0.28"/>
+  </g>
+
+  <!-- arms reaching to the controller -->
+  <path d="M6.2 19.5 Q7.8 22.9 10.5 22.4" fill="none" stroke="#191419" stroke-width="2.7" stroke-linecap="round"/>
+  <path d="M6.2 19.5 Q7.8 22.9 10.5 22.4" fill="none" stroke="#ffffff" stroke-width="1.55" stroke-linecap="round"/>
+  <path d="M23 24.7 Q20.9 23.3 18.5 22.8" fill="none" stroke="#191419" stroke-width="2.7" stroke-linecap="round"/>
+  <path d="M23 24.7 Q20.9 23.3 18.5 22.8" fill="none" stroke="#ffffff" stroke-width="1.55" stroke-linecap="round"/>
+
+  <!-- the controller -->
+  <g transform="translate(14.3 22.2)">
+    <path d="M-4.8 -2 L4.8 -2 Q6.6 -2 7 -0.4 L7.9 3 Q8.2 4.6 6.9 5 Q5.6 5.3 4.7 4 L3.6 2.4 L-3.6 2.4 L-4.7 4 Q-5.6 5.3 -6.9 5 Q-8.2 4.6 -7.9 3 L-7 -0.4 Q-6.6 -2 -4.8 -2 Z" fill="#26262e" stroke="#191419" stroke-width="0.5" stroke-linejoin="round"/>
+    <rect x="-4.05" y="0.15" width="1.3" height="0.9" fill="#cfd3da"/>
+    <rect x="-3.85" y="-0.05" width="0.9" height="1.3" fill="#cfd3da"/>
+    <rect x="-0.55" y="-0.85" width="1.1" height="0.5" rx="0.25" fill="#454a54"/>
+    <circle cx="2.95" cy="-0.55" r="0.5" fill="#ff5d8f" stroke="#191419" stroke-width="0.18"/>
+    <circle cx="4.1" cy="0.35" r="0.5" fill="#ffd166" stroke="#191419" stroke-width="0.18"/>
+    <circle cx="2.95" cy="1.25" r="0.5" fill="#35d0ba" stroke="#191419" stroke-width="0.18"/>
+  </g>
+
+  <!-- the magenta star coin and bubble, the mark's own -->
+  <circle cx="26.5" cy="13.4" r="5.5" fill="#191419"/>
+  <circle cx="26.5" cy="13.4" r="3.8" fill="#c41c83"/>
+  <path d="M26.926 11.395L27.154 12.811L28.539 13.186L27.262 13.84L27.334 15.273L26.317 14.261L24.977 14.772L25.625 13.492L24.725 12.375L26.142 12.596z" fill="#ffffff" stroke="#ffffff" stroke-width="0.5" stroke-linejoin="round"/>
+  <circle cx="24.9" cy="19.6" r="4" fill="#191419"/>
+  <circle cx="24.9" cy="19.6" r="2.3" fill="#ffffff"/>
+</svg>
